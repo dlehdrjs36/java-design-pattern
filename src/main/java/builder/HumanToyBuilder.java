@@ -32,5 +32,5 @@ public class HumanToyBuilder extends ToyBuilder {
     public Toy getToy() {
         return this.toy;
     }
-    
+
 }
