@@ -27,4 +27,3 @@ public class BallToyBuilder extends ToyBuilder {
         return this.toy;
     }
 }
-
