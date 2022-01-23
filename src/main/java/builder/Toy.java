@@ -48,4 +48,5 @@ public class Toy {
                 ", shoes='" + shoes + '\'' +
                 '}';
     }
+
 }
