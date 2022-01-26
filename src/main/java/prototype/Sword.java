@@ -1,6 +1,8 @@
 package prototype;
 
+//ConcretePrototype
 public class Sword extends Item {
+
     @Override
     protected Sword clone() throws CloneNotSupportedException {
         System.out.print(this + "-[검 획득] ");

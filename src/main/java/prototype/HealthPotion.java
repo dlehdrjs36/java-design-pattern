@@ -1,5 +1,6 @@
 package prototype;
 
+//ConcretePrototype
 public class HealthPotion extends Item {
 
     @Override

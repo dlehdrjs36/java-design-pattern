@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+//Client
 public class ItemVendingMachine {
     private final List<Item> itemList;//원형 관리자(원형에 대한 정보를 검색하거나 저장 또는 삭제하는 기능을 담당)
 
@@ -27,8 +28,8 @@ public class ItemVendingMachine {
         }
     }
 
-    //아이템 뽑기
-    public Item getItem() {//Operation()
+    //아이템 뽑기(원형 복제), Operation()
+    public Item getItem() {
         Random rn = new Random();
         Item item = itemList.get(rn.nextInt(itemList.size()));
 

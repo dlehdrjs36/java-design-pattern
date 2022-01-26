@@ -1,5 +1,6 @@
 package prototype;
 
+//Prototype
 public abstract class Item implements Cloneable {
     abstract void use();
 
