@@ -2,7 +2,6 @@ package composite;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.ListIterator;
 
 //Composite
 public class Picture extends Graphic {
@@ -15,14 +14,17 @@ public class Picture extends Graphic {
     @Override
     public void draw() {
         System.out.println("composite draw start");
-        for (int i = 0; i < this.graphicList.size(); i++) {
-            this.graphicList.get(i).draw();
+        for (Graphic graphic : this.graphicList) {
+            graphic.draw();
         }
         System.out.println("composite draw end");
     }
 
     @Override
     public Graphic getChild(int i) {
+        if(this.graphicList.size() == 0){
+            throw new IndexOutOfBoundsException("Composite에서 자식을 삭제하면 자식은 Composite의 부모를 가리키는 참조자에서 삭제된다.");
+        }
         return this.graphicList.get(i);
     }
 
