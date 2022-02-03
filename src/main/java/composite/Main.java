@@ -8,7 +8,7 @@ public class Main {
         Graphic parentPicture = new Picture();
         Graphic childPicture = new Picture();
 
-        /* Leaf 클래스는 자식과 관련된 연산 미동작 처리 */
+        /* Leaf 클래스는 자식과 관련된 연산 미동작 */
         line.draw();
         line.add(text);
         System.out.println(line.getChild(0));
@@ -24,8 +24,9 @@ public class Main {
         System.out.println(rectangle.getChild(0));
         rectangle.remove(text);
         System.out.println("-----------------------");
-        /* //Leaf 클래스는 자식과 관련된 연산 미동작 처리 */
+        /* //Leaf 클래스는 자식과 관련된 연산 미동작 */
 
+        /* 복합 구성요소는 자식과 관련된 연산 동작 */
         childPicture.add(line);
         childPicture.add(text);
         childPicture.add(rectangle);
@@ -51,6 +52,6 @@ public class Main {
         System.out.println(parentPicture.getChild(0));
         System.out.println(parentPicture.getChild(1));
         System.out.println(parentPicture.getChild(2));
-
+        /* //복합 구성요소는 자식과 관련된 연산 동작 */
     }
 }
