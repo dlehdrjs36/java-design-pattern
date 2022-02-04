@@ -17,5 +17,4 @@ public abstract class PizzaDecorator implements PizzaPlace {
     public int calculate() {
         return pizzaPlace.calculate();
     }
-
 }

@@ -1,5 +1,6 @@
 package decorator;
 
+//ConcreteComponent
 public class CheesePizza implements PizzaPlace {
     @Override
     public String createPizza() {
